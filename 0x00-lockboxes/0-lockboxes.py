@@ -7,7 +7,7 @@ def canUnlockAll(boxes):
     """[Checks lists of lists to see if it contains key to other boxes]
     """
     keys = {
-        0:True
+        0: True
     }
     counter = 0
     try:
