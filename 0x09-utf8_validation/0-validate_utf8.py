@@ -29,11 +29,10 @@ def validUTF8(data):
                 continue
 
             if n_bytes == 1 or n_bytes > 4:
-                n_bytes -= 1
                 return False
 
         else:
-            if not (binaryNumber[0] == 1 and binaryNumber[2] == 0):
+            if not (binaryNumber[0] == '1' and binaryNumber[2] == '0'):
                 return False
 
         n_bytes -= 1
