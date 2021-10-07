@@ -38,7 +38,7 @@ int return_(int level)
  */
 void menger(int level)
 {
-    int floor, col, row;
+	int floor, col, row;
 
 	level == 0 ? return_(-1) : return_(0);
 
