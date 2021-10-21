@@ -34,7 +34,7 @@ def printTable(table, N):
     for row in range(N):
         for col in range(N):
             if col == table[row]:
-                board.append([row, col])
+                board.append([col, row])
     print(board)
 
 
@@ -42,8 +42,8 @@ def findSolution(board, col, N):
     """[summary]
 
     Args:
-        board ([List]): [List of list of ]
-        col ([type]): [description]
+        board ([List]): [List numbers in range of 0 to N ]
+        col ([num]): [the currrent column]
     """
     if col == N:
         printTable(board, N)
@@ -58,29 +58,34 @@ def findSolution(board, col, N):
                 board[col] = j
                 findSolution(board, col + 1, N)
 
-
 def solveNQ():
     """[This function solves the N- Queen problem]
 
     Args:
         argv ([int]): [Int that indicated the size of N]
     """
+    '''Checkes the lenght of arguments'''
     if len(argv) != 2:
         print("Usage: nqueens N")
         exit(1)
 
+    '''Try and except to see if argv[1] is an integer'''
     try:
         N = int(argv[1])
+
     except BaseException:
         print("N must be a number")
         exit(1)
 
+    '''This checks to make sure that the integer passed it grater then 4'''
     if N < 4:
         print("N must be at least 4")
 
-    board = [[x for x in range(int(argv[1]))] for i in range(int(argv[1]))]
+    '''List comprehension to generate a list of lists'''
+    board = [[0 for x in range(int(argv[1]))] for i in range(int(argv[1]))]
 
     col = 0
+    '''This solution finds the safe postitons that n-queens are able to be placed'''
     findSolution(board, col, N)
 
 solveNQ()
