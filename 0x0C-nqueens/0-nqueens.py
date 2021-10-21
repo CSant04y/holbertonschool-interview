@@ -16,8 +16,8 @@ def checkPosition(board, i, j, col):
         col ([int]): [de]
     """
 
-    if ((board[i] == j) or (board[i] == i - j + col) or
-            (board[i] == j - col + i)):
+    if ((board[i] == j) or (board[i] == j - i + col) or
+            (board[i] == i - col + j)):
         return True
     return False
 
