@@ -10,7 +10,7 @@ def checkPosition(board, i, j, col):
     """[summary]
 
     Args:
-        board ([list]): [description]
+        board ([list]): [This is the current postion of]
         i ([int]): [description]
         j ([int]): [description]
         col ([int]): [de]
@@ -58,6 +58,7 @@ def findSolution(board, col, N):
                 board[col] = j
                 findSolution(board, col + 1, N)
 
+
 def solveNQ():
     """[This function solves the N- Queen problem]
 
@@ -85,7 +86,8 @@ def solveNQ():
     board = [[0 for x in range(int(argv[1]))] for i in range(int(argv[1]))]
 
     col = 0
-    '''This solution finds the safe postitons that n-queens are able to be placed'''
+    '''This solution finds the safe postitons that n-queens are able to be
+     placed'''
     findSolution(board, col, N)
 
 solveNQ()
