@@ -70,7 +70,7 @@ def solveNQ():
         print("Usage: nqueens N")
         exit(1)
 
-    '''Try and except to see if argv[1] is an integer'''
+    '''Try and except to see if argv[1] is an integer   '''
     try:
         N = int(argv[1])
 
