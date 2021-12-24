@@ -50,9 +50,9 @@ void Errorhandle(int status)
  */
 int checkIfNum(char *num)
 {
-    int len = getLen(num);
+    int len = getLen(num), itr;
 
-    for(int itr = 0; itr < len; itr++)
+    for(itr = 0; itr < len; itr++)
     {
         /*So soemthing*/
         if (num[itr] > '9' || num[itr] < '0')
@@ -72,9 +72,9 @@ int checkIfNum(char *num)
  */
 int getLen(char *num)
 {
-    int count = 0;
+    int count = 0, i;
     
-    for(int i = 0; num[i] != '\0'; i++, count++)
+    for(i = 0; num[i] != '\0'; i++, count++)
     {}
     return (count);
 }
@@ -89,7 +89,7 @@ int getLen(char *num)
 int *myCalloc(int nitems, int size)
 {
  /*develop and initilize buffer to 0*/
- int *buff;
+ int *buff, i;
 
  if (!nitems || !size )
  {
@@ -102,7 +102,7 @@ int *myCalloc(int nitems, int size)
  {
      Errorhandle(98);
  }
- for(int i = 0; i < nitems; i++)
+ for(i = 0; i < nitems; i++)
  {
      buff[i] = 0;
  }
