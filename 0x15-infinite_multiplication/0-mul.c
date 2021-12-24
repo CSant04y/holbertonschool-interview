@@ -23,6 +23,7 @@ int main(int argc, char **argv)
     if(res == -1)
       Errorhandle(98);
     free(buffer);
+    return(0);
 }
 
 /**
