@@ -51,7 +51,7 @@ void Errorhandle(int status)
 int checkIfNum(char *num)
 {
     int len = getLen(num);
-    // printf("This is length str %d\n", len);
+
     for(int itr = 0; itr < len; itr++)
     {
         /*So soemthing*/
@@ -123,7 +123,6 @@ int multiply(int len1, int len2, int *buff, char *num1, char *num2 )
   /*Loop through len1 of str1 and str2 in a double forloop*/
   for(i = len1 - 1; i >= 0; i--)
   {
-    // Take current digit of second number
     int n1 = num1[i] - '0';
 
     for(j = len2 - 1; j >= 0; j--)
