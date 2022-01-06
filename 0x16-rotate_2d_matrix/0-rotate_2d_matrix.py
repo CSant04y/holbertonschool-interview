@@ -1,13 +1,14 @@
 #!/usr/bin/python3
 """This module rotates a 2-D matrix clockwise"""
 
+
 def rotate_2d_matrix(matrix):
     """[This function takes a Matrix and roatates it clockwise]
 
     Args:
         matrix ([type]): [description]
     """
-    N = len(matrix);
+    N = len(matrix)
     '''This loops through matrix columns'''
     for x in range(0, int(N / 2)):
         for y in range(x, N-x-1):
