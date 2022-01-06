@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """This module rotates a 2-D matrix clockwise"""
 
 def rotate_2d_matrix(matrix):
