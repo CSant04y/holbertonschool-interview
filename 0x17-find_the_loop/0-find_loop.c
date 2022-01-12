@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * find_listint_loop - This function finds a loop in linked list 
- * 
+ * find_listint_loop - This function finds a loop in linked list
+ *
  * @head: This is the head of the Linked list that is passed in
- * @return listint_t* 
+ * @return listint_t*
  */
 listint_t *find_listint_loop(listint_t *head)
 {
@@ -19,11 +19,11 @@ listint_t *find_listint_loop(listint_t *head)
 	{
 		turtle = turtle->next;
 		hare = hare->next->next;
-		if(turtle == hare)
-		{	
+		if (turtle == hare)
+		{
 			turtle = head;
 			while (turtle != hare)
-			{	
+			{
 				turtle = turtle->next;
 				hare = hare->next;
 			}
