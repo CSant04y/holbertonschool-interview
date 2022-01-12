@@ -5,7 +5,7 @@
  * find_listint_loop - This function finds a loop in linked list
  *
  * @head: This is the head of the Linked list that is passed in
- * return: listint_t*
+ * Return: listint_t*
  */
 listint_t *find_listint_loop(listint_t *head)
 {
