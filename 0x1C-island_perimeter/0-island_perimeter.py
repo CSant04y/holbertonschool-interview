@@ -4,6 +4,7 @@ This function finds the permiter of an Island
 on a 2-demensional matrix
 """
 
+
 def island_perimeter(grid):
     '''Takes in grid and returns the perimeter'''
     # Define vars to hold lens
