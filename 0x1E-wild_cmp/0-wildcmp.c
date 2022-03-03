@@ -2,7 +2,8 @@
 
 /**
  * wildcmp - check the code for Holberton School students.
- *
+ * @s1: string 1
+ * @s2: string 2
  * Return: Always 0 if not a match 1 if a match.
  */
 int wildcmp(char *s1, char *s2)
