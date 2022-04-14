@@ -2,6 +2,7 @@
 """_This function returns a double array with values of pascals triangle_
 """
 
+
 def pascal_triangle(n):
     """_returns list of list_
 
@@ -11,7 +12,7 @@ def pascal_triangle(n):
     Returns:
         _list_: _List of list_
     """
-    newArray = [];
+    newArray = []
     if n <= 0:
         return []
     for i in range(n):
