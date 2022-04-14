@@ -3,6 +3,14 @@
 """
 
 def pascal_triangle(n):
+    """_returns list of list_
+
+    Args:
+        n (int): _size of triangle_
+
+    Returns:
+        _list_: _List of list_
+    """
     newArray = [];
     if n <= 0:
         return []
